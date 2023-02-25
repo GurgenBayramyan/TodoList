@@ -1,0 +1,115 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(purple,pink,white);
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 5vh;
+    
+}
+h2{
+    font-size: 90px;
+    color: pink;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Explora', cursive;
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+	animation: rotate-center 0.6s ease-in-out both;
+}
+.todo_parent{
+    width: 35%;
+    margin: auto;
+    background-color: white;
+    height: 80vh;
+    border-radius: 10px;
+    
+}
+.content_todo{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.task_input{
+    width: 70%;
+    padding: 10px;
+    margin-right: 1vw;
+}
+.add_btn{
+     padding: 11px ;
+     background-color: blueviolet;
+     border: none;
+     border-radius: 5px;
+    cursor: pointer;
+}
+.add_btn i{
+    color: white;
+}
+.todo_task{
+    
+    padding: 2vh 1vw;
+    width: 55%;
+    border: none;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+.todo_task_active{
+    border: 1px solid rebeccapurple;
+    outline: unset;
+    padding: 2vh 1vw;
+    width: 55%;
+    transition: 8ms ease;
+    color: brown;
+    transition: 1s ease-in-out;
+}
+.pen{
+    width: 4vw;
+    cursor: pointer;
+}
+.delete{
+    width: 4vw;
+    cursor: pointer;
+}
+.cheked{
+    border: 1px solid blue;
+    opacity: 0.5;
+    
+}
+.text_messege{
+    display: none;
+    color: red;
+    
+}
+.count{
+    padding-left: 45vw;
+    color: brown;
+}
+ @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
